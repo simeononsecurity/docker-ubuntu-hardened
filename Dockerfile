@@ -13,3 +13,5 @@ RUN apt-get install -y ansible
 RUN git clone https://github.com/simeononsecurity/docker-ubuntu-hardened.git
 RUN cd /docker-ubuntu-hardened/ && chmod +x ./dockersetup.sh
 RUN cd /docker-ubuntu-hardened && bash ./dockersetup.sh
+
+ENTRYPOINT [ "/bin/bash" ]
