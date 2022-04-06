@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
-  any_errors_fatal: true
+  any_errors_fatal: false
+  ignore_errors: yes
   tasks:
     - name: install git
       become: 'yes'
