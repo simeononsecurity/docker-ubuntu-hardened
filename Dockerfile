@@ -4,7 +4,7 @@ ENV container docker
 ENV TERM=xterm
 
 # Update Packages
-RUN apt-get update && apt-get -y apt-utils && apt-get -fuy full-upgrade -y && apt-get -fuy install git aide iptables ufw software-properties-common dnsutils apparmor kmod systemd automake net-tools procps cmake make python3 python3-pip python3-dev
+RUN apt-get update && apt-get -y install apt-utils && apt-get -fuy full-upgrade -y && apt-get -fuy install git aide iptables ufw software-properties-common dnsutils apparmor kmod systemd automake net-tools procps cmake make python3 python3-pip python3-dev
 
 # Install Ansible
 RUN add-apt-repository --yes --update ppa:ansible/ansible
