@@ -12,7 +12,6 @@ jobs:
     env:
       DOCKER_PLATFORMS: linux/amd64,linux/armhf,linux/arm64
 
-
     steps:
     -
         name: Checkout
