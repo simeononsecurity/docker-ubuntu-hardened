@@ -1,4 +1,9 @@
 FROM ubuntu:latest
+
+LABEL org.opencontainers.image.source="https://github.com/simeononsecurity/docker-ubuntu-hardened"
+LABEL org.opencontainers.image.description="Hardened Docker Container with arm, arm64, and amd64 support"
+LABEL org.opencontainers.image.authors="simeononsecurity"
+
 ENV DEBIAN_FRONTEND noninteractive
 ENV container docker
 ENV TERM=xterm
